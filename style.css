@@ -1,0 +1,254 @@
+/* 011627 00FF55 56E39F FA77FA */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Rubik+Doodle+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Didact+Gothic&family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: aliceblue; */
+}
+
+body {
+    background-color: #06122e;
+}
+
+header {
+    /* background: red; */
+    margin-top: 20px;
+    /* margin-bottom: 60px; */
+    height: 4rem;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+}
+
+
+/* background-color: #bd76bd; */
+
+.Congratulation {
+    /* background-color: yellow; */
+}
+
+.winnerContainer {
+    background-color: rgb(153, 0, 255);
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px;
+    font-family: "Didact Gothic", sans-serif;
+    font-family: "Poppins", sans-serif;
+    width: 500px;
+    margin: 40px auto;
+    border-radius: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+.showWin {
+    color: whitesmoke;
+    padding: 6px;
+    font-family: "Didact Gothic", sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+.winnerContainer p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    /* align-items: space-around; */
+}
+
+
+/* .gridBox {
+    background-color: rgb(243, 239, 245);
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: wheat; */
+
+
+/* border-radius: 7px; */
+
+
+/* } */
+
+.gridBox {
+    /* background-color: rgb(243, 239, 245); */
+    min-width: 100%;
+    width: 370px;
+    /* height: 350px; */
+    aspect-ratio: 1 / 1;
+}
+
+.row1 {
+    /* height: 70%; */
+    height: 33%;
+    display: flex;
+    /* background-color: #00FF55; */
+}
+
+.box {
+    width: 33.29%;
+    /* height: 33.29%; */
+    margin: px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.row2 {
+    height: 33%;
+    display: flex;
+    /* background-color: #a6ff00; */
+}
+
+.row3 {
+    /* height: 70%; */
+    height: 33%;
+    display: flex;
+    /* background-color: #00/6eff; */
+}
+
+.box {
+    /* background: #de82de; */
+    background-color: #b388eb;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 9vh;
+    border-radius: 5px;
+    font-family: "Abel", sans-serif;
+    font-family: "Didact Gothic", sans-serif;
+    font-family: "Poppins", sans-serif;
+    /* color: rgb(32, 32, 32); */
+    /* color: wheat; */
+    /* color: #f2f2f2; */
+    cursor: pointer;
+}
+
+.btnSec {
+    /* background-color: yellow; */
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    /* margin: 5px; */
+}
+
+.btnSec button {
+    margin: 8px;
+}
+
+.resetBtn,
+.newBtn {
+    padding: 8px;
+    width: 160px;
+    font-size: 1.5rem;
+    background: #00ff55;
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    /* font-family: 'Abel', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+}
+
+@media screen and (max-width: 501px) {
+    .gridBox {
+        /* background-color: rgb(243, 239, 245); */
+        min-width: 100%;
+        width: 300px;
+        /* height: 350px; */
+        aspect-ratio: 1 / 1;
+    }
+    .winnerContainer {
+        width: 300px;
+        margin: 20px auto;
+        border-radius: 9px;
+        font-size: 1rem;
+    }
+    .winnerContainer p {
+        color: white;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .gridBox {
+        /* background-color: rgb(243, 239, 245); */
+        min-width: 100%;
+        width: 250px;
+        /* height: 350px; */
+        aspect-ratio: 1 / 1;
+    }
+    .winnerContainer {
+        width: 200px;
+        margin: 20px auto;
+        border-radius: 9px;
+        font-size: 0.8rem;
+    }
+    .winnerContainer p {
+        color: white;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .gridBox {
+        /* background-color: rgb(243, 239, 245); */
+        min-width: 100%;
+        width: 150px;
+        /* height: 350px; */
+        aspect-ratio: 1 / 1;
+    }
+    header h2 {
+        font-size: 8vw;
+    }
+    .resetBtn,
+    .newBtn {
+        padding: 5px;
+        width: 100%;
+        font-size: 1.2rem;
+        background: #00ff55;
+        border: none;
+        border-radius: 4px;
+        font-family: "Abel", sans-serif;
+        font-family: "Didact Gothic", sans-serif;
+        font-family: "Poppins", sans-serif;
+    }
+    .box {
+        font-size: 30px;
+    }
+    .winnerContainer {
+        width: 100px;
+        margin: 20px auto;
+        border-radius: 9px;
+        font-size: 1rem;
+        height: 40px;
+        padding: 5px;
+    }
+    .winnerContainer p {
+        color: white;
+        font-size: 0.6rem;
+    }
+}
